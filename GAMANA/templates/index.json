@@ -1,6 +1,6 @@
 {
   "sections": {
-    "image_banner": {
+    "imagebanner": {
       "type": "image-banner",
       "blocks": {
         "heading": {
@@ -47,7 +47,7 @@
         "show_text_below": false
       }
     },
-    "featured_collection": {
+    "featuredcollection": {
       "type": "featured-collection",
       "settings": {
         "title": "Shop the latest.",
@@ -75,7 +75,7 @@
         "padding_bottom": 72
       }
     },
-    "collection_list": {
+    "collectionlist": {
       "type": "collection-list",
       "blocks": {
         "collectionone": {
@@ -115,7 +115,7 @@
         "padding_bottom": 72
       }
     },
-    "multicolumn": {
+    "brandcolumns": {
       "type": "multicolumn",
       "blocks": {
         "considered": {
@@ -196,10 +196,10 @@
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection",
-    "collection_list",
-    "multicolumn",
+    "imagebanner",
+    "featuredcollection",
+    "collectionlist",
+    "brandcolumns",
     "newsletter"
   ]
 }
