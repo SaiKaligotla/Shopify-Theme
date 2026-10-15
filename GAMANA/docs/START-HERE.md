@@ -10,13 +10,14 @@ The starting concept is **AUREL**, a temporary premium fashion/beauty brand dire
 
 ## Current state
 
-- The standard Shopify theme structure is in place inside the `GAMANA/` folder. Paths mentioned in this guide are relative to that folder.
-- The homepage has custom, editable AUREL sections for a hero, brand principles, collection stories, and a brand story.
-- Shopify Dawn provides the normal product, collection, search, cart drawer, and theme-editor behavior. The styling has been changed to the agreed modern-luxe direction.
-- A visual concept is available in the preview. Its add-to-bag and email interactions are only demonstrations; they do not send orders or email addresses.
+- The standard Shopify theme structure is in the `GAMANA/` folder. Paths mentioned in this guide are relative to that folder.
+- `templates/index.json` is the actual home page, with editable sections for a campaign hero, brand principles, featured products, collections, editorial story, and newsletter. `templates/404.json` is only the not-found fallback.
+- Shopify Dawn provides the live product, collection, search, cart, and theme-editor behavior. The visual direction uses a clear product-first layout, generous whitespace, compact navigation, and direct calls to action.
+- The standalone preview demonstrates sample products and interactions only; its add-to-bag and email form do not create orders or collect email addresses. From a static host, the repository's root `index.html` opens that preview.
+- `../Shopify-Theme.zip` is the upload-ready theme archive: its root contains Shopify's standard theme folders, not a parent `GAMANA/` folder. The archive excludes this guide and the visual preview.
 - Nothing has been uploaded to a Shopify store or published live.
 
-The theme is based on Shopify Dawn 16.0.0, which is included with its license in `LICENSE.md`. It was chosen as a safer starting point for a client store with complete shopping pages and accessible interactions. The separate `preview/` and `docs/` folders are for review and guidance; `.shopifyignore` keeps them out of theme uploads.
+The theme is based on Shopify Dawn 16.0.0, which is included with its license in `LICENSE.md`. The project takes broad inspiration from Apple's product storytelling while keeping AUREL's own fashion/beauty brand; no Apple brand assets are used. The separate `preview/` and `docs/` folders are for review and guidance, and `.shopifyignore` keeps them out of theme uploads.
 
 ## What the Shopify terms mean
 

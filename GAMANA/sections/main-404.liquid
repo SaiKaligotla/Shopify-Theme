@@ -1,23 +1,36 @@
-<style type="text/css">
-  .template-404 .title + * {
-    margin-top: 1rem;
-  }
+<section class="aurel-404 page-width" aria-labelledby="AurelNotFoundTitle-{{ section.id }}">
+  <p class="atelier-eyebrow">404 / THE PAGE ISN'T HERE</p>
+  <h1 class="title" id="AurelNotFoundTitle-{{ section.id }}">{{ 'templates.404.title' | t }}</h1>
+  <p class="aurel-404__message">{{ 'templates.404.subtext' | t }}</p>
 
-  @media screen and (min-width: 750px) {
-    .template-404 .title + * {
-      margin-top: 2rem;
-    }
-  }
-</style>
+  <div class="aurel-404__actions">
+    <a href="{{ routes.root_url }}" class="button">Back to AUREL</a>
+    <a href="{{ routes.all_products_collection_url }}" class="atelier-text-link">
+      Shop the collection <span aria-hidden="true">→</span>
+    </a>
+  </div>
 
-<div class="template-404 page-width page-margin center">
-  <p>
-    {{ 'templates.404.subtext' | t }}
-  </p>
-  <h1 class="title">
-    {{ 'templates.404.title' | t }}
-  </h1>
-  <a href="{{ routes.all_products_collection_url }}" class="button">
-    {{ 'general.continue_shopping' | t }}
-  </a>
-</div>
+  <form action="{{ routes.search_url }}" method="get" role="search" class="aurel-404__search">
+    <label class="visually-hidden" for="AurelNotFoundSearch-{{ section.id }}">Search the store</label>
+    <input
+      id="AurelNotFoundSearch-{{ section.id }}"
+      type="search"
+      name="q"
+      placeholder="Search products and collections"
+      aria-label="Search products and collections"
+    >
+    <button type="submit" class="button button--secondary">Search</button>
+  </form>
+</section>
+
+{% schema %}
+{
+  "name": "404 page",
+  "tag": "section",
+  "class": "section-main-404",
+  "settings": [],
+  "presets": [
+    { "name": "404 page" }
+  ]
+}
+{% endschema %}

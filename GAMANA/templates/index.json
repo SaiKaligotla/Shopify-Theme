@@ -4,14 +4,14 @@
       "type": "atelier-hero",
       "settings": {
         "text_color": "dark",
-        "eyebrow": "THE EVERYDAY EDIT · 01",
-        "heading_line_1": "A quieter",
-        "heading_line_2": "kind of luxury.",
-        "body": "Thoughtful pieces for getting dressed — and getting ready.",
-        "primary_label": "Explore the edit",
+        "eyebrow": "AUREL / THE EVERYDAY EDIT",
+        "heading_line_1": "A little less",
+        "heading_line_2": "ordinary.",
+        "body": "Considered clothing, daily rituals and objects designed to make every day feel like yours.",
+        "primary_label": "Explore new arrivals",
         "primary_link": "shopify://collections/all",
-        "secondary_label": "Our point of view",
-        "secondary_link": "shopify://pages/about-us"
+        "secondary_label": "Meet AUREL",
+        "secondary_link": "#aurel-story"
       }
     },
     "atelier_values": {
@@ -20,37 +20,41 @@
         "thoughtful": {
           "type": "principle",
           "settings": {
-            "title": "Thoughtful by design",
-            "body": "A clear point of view, without the noise."
+            "title": "Chosen with care",
+            "body": "A focused collection, not a crowded one."
           }
         },
         "chosen": {
           "type": "principle",
           "settings": {
-            "title": "Chosen with care",
-            "body": "Details that feel as good as they look."
+            "title": "Made for repeat wear",
+            "body": "Pieces you will reach for, again and again."
           }
         },
         "everyday": {
           "type": "principle",
           "settings": {
-            "title": "Made for everyday",
-            "body": "Considered pieces for real life."
+            "title": "Details that matter",
+            "body": "Thoughtful choices at every touchpoint."
           }
         }
       },
-      "block_order": ["thoughtful", "chosen", "everyday"],
+      "block_order": [
+        "thoughtful",
+        "chosen",
+        "everyday"
+      ],
       "settings": {
-        "eyebrow": "THE AUREL APPROACH",
-        "heading": "A little more considered."
+        "eyebrow": "THE AUREL STANDARD",
+        "heading": "Good design. No noise."
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "The current edit.",
+        "title": "The essentials.",
         "heading_size": "h1",
-        "description": "A few good things, made to become your favourites.",
+        "description": "Meet your new everyday favourites.",
         "show_description": true,
         "description_style": "body",
         "collection": "all",
@@ -67,10 +71,10 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
+        "quick_add": "standard",
         "columns_mobile": "2",
-        "padding_top": 72,
-        "padding_bottom": 72
+        "padding_top": 88,
+        "padding_bottom": 88
       }
     },
     "atelier_categories": {
@@ -87,7 +91,7 @@
         "ritual": {
           "type": "category",
           "settings": {
-            "title": "The ritual",
+            "title": "Daily rituals",
             "subtitle": "A little care, every day",
             "link": "shopify://collections/all"
           }
@@ -95,17 +99,21 @@
         "details": {
           "type": "category",
           "settings": {
-            "title": "The details",
-            "subtitle": "Finishing touches",
+            "title": "Finishing touches",
+            "subtitle": "Small things, well chosen",
             "link": "shopify://collections/all"
           }
         }
       },
-      "block_order": ["wardrobe", "ritual", "details"],
+      "block_order": [
+        "wardrobe",
+        "ritual",
+        "details"
+      ],
       "settings": {
-        "eyebrow": "FIND YOUR NEXT FAVOURITE",
-        "heading": "The collection, in focus.",
-        "link_label": "View everything",
+        "eyebrow": "FIND YOUR EVERYDAY",
+        "heading": "Choose your point of view.",
+        "link_label": "Shop everything",
         "link": "shopify://collections/all"
       }
     },
@@ -114,10 +122,10 @@
       "settings": {
         "image_position": "left",
         "eyebrow": "A NOTE ON INTENTION",
-        "heading": "Made to live with.",
+        "heading": "Less, but more you.",
         "body": "<p>We believe the things you reach for every day deserve a little more thought. A considered edit of pieces, textures and rituals — chosen to feel right now, and for a long time to come.</p>",
-        "link_label": "A little about us",
-        "link": "shopify://pages/about-us"
+        "link_label": "Shop the edit",
+        "link": "shopify://collections/all"
       }
     },
     "newsletter": {
@@ -126,21 +134,25 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "A more considered inbox.",
+            "heading": "Good things, occasionally.",
             "heading_size": "h1"
           }
         },
         "paragraph": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>New things, thoughtful notes, and the occasional reason to stay a little longer.</p>"
+            "text": "<p>New arrivals, thoughtful notes, and the occasional reason to stay a little longer.</p>"
           }
         },
         "email_form": {
           "type": "email_form"
         }
       },
-      "block_order": ["heading", "paragraph", "email_form"],
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email_form"
+      ],
       "settings": {
         "color_scheme": "scheme-2",
         "full_width": false,

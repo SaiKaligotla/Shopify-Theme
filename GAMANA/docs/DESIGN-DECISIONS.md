@@ -1,35 +1,29 @@
 # AUREL theme — design decisions
 
-This is the short record of the design direction selected so far. It is intentionally easy to revise as we review the preview.
+This is the working record of the storefront direction and what still needs real brand input.
 
-## Agreed starting brief
+## Brief
 
-- **Store type:** fashion or beauty.
-- **Visual direction:** modern luxe — considered contrast, warm neutrals, polished details, and editorial imagery.
-- **Theme purpose:** a client-specific store theme, not a public Shopify Theme Store product at this stage.
-- **Brand assets:** start with placeholders; real brand materials are not ready yet.
-- **Shopping needs:** a straightforward shop with product pages, product options, collections, search, and a simple cart.
+- **Store type:** premium fashion and beauty.
+- **Theme purpose:** a client-specific Shopify storefront, not a public Theme Store product.
+- **Brand assets:** temporary AUREL wordmark, copy, and sample imagery until approved client assets are supplied.
+- **Shopping needs:** product, collection, search, cart, and checkout flows powered by Shopify Dawn rather than demo-only code.
 
-## Current visual concept
+## Visual direction
 
-- **Temporary name:** AUREL. Replace this with the client's real store name.
-- **Palette:** warm ivory `#F7F5EF`, deep ink `#272522`, soft stone `#EEEAE2`, and muted bronze `#A88E6E`.
-- **Type:** expressive editorial-style headings with a quiet, readable sans-serif body.
-- **Photography:** warm natural light, tactile surfaces, restrained styling, and enough breathing room for the products to lead.
-- **Page rhythm:** announcement and navigation → full-width story-led hero → principles → featured products → collection stories → brand story → email signup → footer.
-- **Shopping behavior:** Shopify Dawn's existing product forms, variants, search, collection filters, cart drawer, and checkout handoff are retained rather than replaced with demo-only code.
+- **Reference:** high-level Apple retail cues—short, clear navigation; product-first campaign storytelling; confident but readable headlines; generous whitespace; modular product and collection features; and simple calls to action. This is a design reference only; the theme does not use Apple branding, copy, or assets.
+- **Palette:** clean white `#FFFFFF`, soft light gray `#F5F5F7`, near-black `#1D1D1F`, and a restrained blue `#0066CC` for primary actions.
+- **Type:** modern sans-serif headlines and body copy with responsive scale and strong readability.
+- **Photography:** existing AI-generated product/editorial placeholders are temporary. Replace them with licensed, approved fashion/beauty photography and descriptive alt text.
+- **Page rhythm:** compact announcement/navigation → campaign hero → short brand principles → live featured products → collection stories → editorial feature → newsletter → useful footer.
+- **Responsive behavior:** deliberate mobile navigation, stacked campaign copy, two-column product discovery, accessible controls, and reduced-motion support.
 
-## Placeholder assets and copy
+## Functional preview versus live store
 
-The five images in `assets/placeholder-*.jpg` are AI-generated visual stand-ins made for this concept. The product names and prices in `preview/` are fictional examples used only to demonstrate product cards. The actual Shopify theme reads real products from the connected store; it does not create or sell these sample products.
+- The standalone preview in `preview/` demonstrates layout and sample interactions only. It does not create orders, collect subscriber emails, or connect to inventory.
+- The Shopify Liquid theme reads the merchant's actual product and collection data and retains Dawn's cart, product-form, search, and theme-editor behavior.
+- `templates/index.json` is the storefront home page. `templates/404.json` is only the not-found fallback; the Shopify-ready archive must keep the theme folders at the ZIP root.
 
-Before launch, replace the sample wordmark, copy, sample images, social links, menu links, collection links, and any unconfirmed policy text with approved brand/store content.
+## Before launch
 
-## Good feedback to give after viewing
-
-- Does the first screen feel premium enough, and is the hero image/crop right?
-- Should the brand lean more fashion, beauty, or stay balanced?
-- Does the dark-versus-light balance feel right?
-- Which section should move, disappear, or be added?
-- Is the product information hierarchy right for the actual catalog?
-- Share the client's logo, colors, font preferences, photography, or reference sites when available.
+Replace the sample wordmark, copy, photos, prices, products, collection assignments, navigation, policy details, social links, and all unconfirmed fulfillment claims with approved store content. Test the unpublished theme on desktop and mobile, confirm each menu and product link, run Theme Check, and preview all product, collection, search, cart, and not-found routes before publishing.
