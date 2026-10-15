@@ -1,0 +1,160 @@
+{
+  "sections": {
+    "atelier_hero": {
+      "type": "atelier-hero",
+      "settings": {
+        "text_color": "dark",
+        "eyebrow": "THE EVERYDAY EDIT · 01",
+        "heading_line_1": "A quieter",
+        "heading_line_2": "kind of luxury.",
+        "body": "Thoughtful pieces for getting dressed — and getting ready.",
+        "primary_label": "Explore the edit",
+        "primary_link": "shopify://collections/all",
+        "secondary_label": "Our point of view",
+        "secondary_link": "shopify://pages/about-us"
+      }
+    },
+    "atelier_values": {
+      "type": "atelier-values",
+      "blocks": {
+        "thoughtful": {
+          "type": "principle",
+          "settings": {
+            "title": "Thoughtful by design",
+            "body": "A clear point of view, without the noise."
+          }
+        },
+        "chosen": {
+          "type": "principle",
+          "settings": {
+            "title": "Chosen with care",
+            "body": "Details that feel as good as they look."
+          }
+        },
+        "everyday": {
+          "type": "principle",
+          "settings": {
+            "title": "Made for everyday",
+            "body": "Considered pieces for real life."
+          }
+        }
+      },
+      "block_order": ["thoughtful", "chosen", "everyday"],
+      "settings": {
+        "eyebrow": "THE AUREL APPROACH",
+        "heading": "A little more considered."
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "The current edit.",
+        "heading_size": "h1",
+        "description": "A few good things, made to become your favourites.",
+        "show_description": true,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "swipe_on_mobile": false,
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "atelier_categories": {
+      "type": "atelier-categories",
+      "blocks": {
+        "wardrobe": {
+          "type": "category",
+          "settings": {
+            "title": "The wardrobe",
+            "subtitle": "Pieces to keep close",
+            "link": "shopify://collections/all"
+          }
+        },
+        "ritual": {
+          "type": "category",
+          "settings": {
+            "title": "The ritual",
+            "subtitle": "A little care, every day",
+            "link": "shopify://collections/all"
+          }
+        },
+        "details": {
+          "type": "category",
+          "settings": {
+            "title": "The details",
+            "subtitle": "Finishing touches",
+            "link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": ["wardrobe", "ritual", "details"],
+      "settings": {
+        "eyebrow": "FIND YOUR NEXT FAVOURITE",
+        "heading": "The collection, in focus.",
+        "link_label": "View everything",
+        "link": "shopify://collections/all"
+      }
+    },
+    "atelier_story": {
+      "type": "atelier-story",
+      "settings": {
+        "image_position": "left",
+        "eyebrow": "A NOTE ON INTENTION",
+        "heading": "Made to live with.",
+        "body": "<p>We believe the things you reach for every day deserve a little more thought. A considered edit of pieces, textures and rituals — chosen to feel right now, and for a long time to come.</p>",
+        "link_label": "A little about us",
+        "link": "shopify://pages/about-us"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "A more considered inbox.",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>New things, thoughtful notes, and the occasional reason to stay a little longer.</p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form"
+        }
+      },
+      "block_order": ["heading", "paragraph", "email_form"],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "full_width": false,
+        "padding_top": 68,
+        "padding_bottom": 72
+      }
+    }
+  },
+  "order": [
+    "atelier_hero",
+    "atelier_values",
+    "featured_collection",
+    "atelier_categories",
+    "atelier_story",
+    "newsletter"
+  ]
+}
