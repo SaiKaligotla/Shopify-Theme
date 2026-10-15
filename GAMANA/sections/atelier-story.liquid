@@ -2,7 +2,7 @@
   assign story_alt = section.settings.image.alt | default: section.settings.image_alt
 %}
 
-<section id="aurel-story" class="atelier-story{% if section.settings.image_position == 'right' %} atelier-story--image-right{% endif %}" aria-labelledby="AtelierStoryHeading-{{ section.id }}">
+<section id="gamana-story" class="atelier-story{% if section.settings.image_position == 'right' %} atelier-story--image-right{% endif %}" aria-labelledby="AtelierStoryHeading-{{ section.id }}">
   <div class="atelier-story__media">
     {% if section.settings.image != blank %}
       {{

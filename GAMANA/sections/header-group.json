@@ -18,8 +18,6 @@
           "type": "announcement",
           "settings": {
             "text": "The new edit is here · Meet your everyday favourites",
-            "text_alignment": "center",
-            "color_scheme": "scheme-2",
             "link": "shopify://collections/all"
           }
         }

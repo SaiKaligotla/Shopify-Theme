@@ -1,60 +1,58 @@
 {
   "sections": {
-    "atelier_hero": {
-      "type": "atelier-hero",
-      "settings": {
-        "text_color": "dark",
-        "eyebrow": "AUREL / THE EVERYDAY EDIT",
-        "heading_line_1": "A little less",
-        "heading_line_2": "ordinary.",
-        "body": "Considered clothing, daily rituals and objects designed to make every day feel like yours.",
-        "primary_label": "Explore new arrivals",
-        "primary_link": "shopify://collections/all",
-        "secondary_label": "Meet AUREL",
-        "secondary_link": "#aurel-story"
-      }
-    },
-    "atelier_values": {
-      "type": "atelier-values",
+    "image_banner": {
+      "type": "image-banner",
       "blocks": {
-        "thoughtful": {
-          "type": "principle",
+        "heading": {
+          "type": "heading",
           "settings": {
-            "title": "Chosen with care",
-            "body": "A focused collection, not a crowded one."
+            "heading": "Everyday, elevated.",
+            "heading_size": "h0"
           }
         },
-        "chosen": {
-          "type": "principle",
+        "intro": {
+          "type": "text",
           "settings": {
-            "title": "Made for repeat wear",
-            "body": "Pieces you will reach for, again and again."
+            "text": "Thoughtful essentials for wherever the day takes you.",
+            "text_style": "body"
           }
         },
-        "everyday": {
-          "type": "principle",
+        "buttons": {
+          "type": "buttons",
           "settings": {
-            "title": "Details that matter",
-            "body": "Thoughtful choices at every touchpoint."
+            "button_label_1": "Shop the collection",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": true
           }
         }
       },
       "block_order": [
-        "thoughtful",
-        "chosen",
-        "everyday"
+        "heading",
+        "intro",
+        "buttons"
       ],
       "settings": {
-        "eyebrow": "THE AUREL STANDARD",
-        "heading": "Good design. No noise."
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "image_behavior": "none",
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "The essentials.",
+        "title": "Shop the latest.",
         "heading_size": "h1",
-        "description": "Meet your new everyday favourites.",
+        "description": "A considered edit of customer favourites.",
         "show_description": true,
         "description_style": "body",
         "collection": "all",
@@ -73,59 +71,95 @@
         "show_rating": false,
         "quick_add": "standard",
         "columns_mobile": "2",
-        "padding_top": 88,
-        "padding_bottom": 88
+        "padding_top": 72,
+        "padding_bottom": 72
       }
     },
-    "atelier_categories": {
-      "type": "atelier-categories",
+    "collection_list": {
+      "type": "collection-list",
       "blocks": {
-        "wardrobe": {
-          "type": "category",
+        "collectionone": {
+          "type": "featured_collection",
           "settings": {
-            "title": "The wardrobe",
-            "subtitle": "Pieces to keep close",
-            "link": "shopify://collections/all"
+            "collection": ""
           }
         },
-        "ritual": {
-          "type": "category",
+        "collectiontwo": {
+          "type": "featured_collection",
           "settings": {
-            "title": "Daily rituals",
-            "subtitle": "A little care, every day",
-            "link": "shopify://collections/all"
+            "collection": ""
           }
         },
-        "details": {
-          "type": "category",
+        "collectionthree": {
+          "type": "featured_collection",
           "settings": {
-            "title": "Finishing touches",
-            "subtitle": "Small things, well chosen",
-            "link": "shopify://collections/all"
+            "collection": ""
           }
         }
       },
       "block_order": [
-        "wardrobe",
-        "ritual",
-        "details"
+        "collectionone",
+        "collectiontwo",
+        "collectionthree"
       ],
       "settings": {
-        "eyebrow": "FIND YOUR EVERYDAY",
-        "heading": "Choose your point of view.",
-        "link_label": "Shop everything",
-        "link": "shopify://collections/all"
+        "title": "Explore the collections.",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-2",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 72
       }
     },
-    "atelier_story": {
-      "type": "atelier-story",
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "considered": {
+          "type": "column",
+          "settings": {
+            "title": "Considered by design",
+            "text": "<p>Thoughtful details, clear purpose, no unnecessary noise.</p>"
+          }
+        },
+        "everyday": {
+          "type": "column",
+          "settings": {
+            "title": "Made for real life",
+            "text": "<p>Easy pieces for days that never look quite the same.</p>"
+          }
+        },
+        "personal": {
+          "type": "column",
+          "settings": {
+            "title": "Style your own way",
+            "text": "<p>A flexible edit that makes room for your point of view.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "considered",
+        "everyday",
+        "personal"
+      ],
       "settings": {
-        "image_position": "left",
-        "eyebrow": "A NOTE ON INTENTION",
-        "heading": "Less, but more you.",
-        "body": "<p>We believe the things you reach for every day deserve a little more thought. A considered edit of pieces, textures and rituals — chosen to feel right now, and for a long time to come.</p>",
-        "link_label": "Shop the edit",
-        "link": "shopify://collections/all"
+        "title": "The GAMANA point of view.",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     },
     "newsletter": {
@@ -134,39 +168,38 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Good things, occasionally.",
-            "heading_size": "h1"
+            "heading": "A little good in your inbox.",
+            "heading_size": "h2"
           }
         },
         "paragraph": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>New arrivals, thoughtful notes, and the occasional reason to stay a little longer.</p>"
+            "text": "<p>New arrivals, thoughtful notes, and occasional inspiration.</p>"
           }
         },
-        "email_form": {
+        "emailform": {
           "type": "email_form"
         }
       },
       "block_order": [
         "heading",
         "paragraph",
-        "email_form"
+        "emailform"
       ],
       "settings": {
         "color_scheme": "scheme-2",
         "full_width": false,
-        "padding_top": 68,
-        "padding_bottom": 72
+        "padding_top": 56,
+        "padding_bottom": 56
       }
     }
   },
   "order": [
-    "atelier_hero",
-    "atelier_values",
+    "image_banner",
     "featured_collection",
-    "atelier_categories",
-    "atelier_story",
+    "collection_list",
+    "multicolumn",
     "newsletter"
   ]
 }

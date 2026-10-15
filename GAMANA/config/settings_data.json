@@ -1,7 +1,7 @@
 {
-  "current": "AUREL",
+  "current": "GAMANA",
   "presets": {
-    "AUREL": {
+    "GAMANA": {
       "logo_width": 150,
       "customer_account_menu": "customer-account-main-menu",
       "color_schemes": {

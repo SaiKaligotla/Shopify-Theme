@@ -1,16 +1,16 @@
 /*
-  AUREL storefront art direction
+  GAMANA storefront art direction
   Product-first, quiet navigation and generous campaign space inspired by modern
   editorial retail. Shopify/Dawn remains responsible for commerce and behavior.
 */
 :root {
   color-scheme: light;
-  --aurel-ink: #1d1d1f;
-  --aurel-muted: #6e6e73;
-  --aurel-paper: #f5f5f7;
-  --aurel-white: #fff;
-  --aurel-blue: #0066cc;
-  --aurel-line: rgba(29, 29, 31, 0.12);
+  --gamana-ink: #1d1d1f;
+  --gamana-muted: #6e6e73;
+  --gamana-paper: #f5f5f7;
+  --gamana-white: #fff;
+  --gamana-blue: #0066cc;
+  --gamana-line: rgba(29, 29, 31, 0.12);
   --atelier-gutter: clamp(2rem, 6vw, 9rem);
   --atelier-content: 150rem;
 }
@@ -22,8 +22,8 @@ html {
 
 body.gradient {
   min-height: 100%;
-  background: var(--aurel-white);
-  color: var(--aurel-ink);
+  background: var(--gamana-white);
+  color: var(--gamana-ink);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   letter-spacing: 0.005em;
   -webkit-font-smoothing: antialiased;
@@ -51,7 +51,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  color: var(--aurel-ink);
+  color: var(--gamana-ink);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 600;
   letter-spacing: -0.045em;
@@ -66,7 +66,7 @@ h6,
 .newsletter .title,
 .email-signup-banner .banner__heading,
 .rich-text .title,
-.aurel-404 .title {
+.gamana-404 .title {
   font-family: var(--atelier-display-font, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }
 
@@ -82,7 +82,7 @@ a {
 }
 
 :focus-visible {
-  outline: 0.25rem solid var(--aurel-blue);
+  outline: 0.25rem solid var(--gamana-blue);
   outline-offset: 0.35rem;
 }
 
@@ -103,13 +103,13 @@ a {
 .announcement-bar.color-scheme-1 {
   min-height: 3.5rem;
   border: 0;
-  background: var(--aurel-paper);
-  color: var(--aurel-ink);
+  background: var(--gamana-paper);
+  color: var(--gamana-ink);
 }
 
 .announcement-bar__message,
 .announcement-bar__message a {
-  color: var(--aurel-ink);
+  color: var(--gamana-ink);
   font-size: 1.1rem;
   letter-spacing: 0.01em;
   line-height: 1.45;
@@ -121,7 +121,7 @@ a {
 }
 
 .header-wrapper {
-  border-bottom: 1px solid var(--aurel-line);
+  border-bottom: 1px solid var(--gamana-line);
   background: rgba(250, 250, 252, 0.9);
   -webkit-backdrop-filter: saturate(180%) blur(18px);
   backdrop-filter: saturate(180%) blur(18px);
@@ -139,7 +139,7 @@ a {
 
 .header__heading .h2,
 .header__heading-link .h2 {
-  color: var(--aurel-ink);
+  color: var(--gamana-ink);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
@@ -149,7 +149,7 @@ a {
 
 .header__menu-item,
 .header__active-menu-item {
-  color: var(--aurel-ink);
+  color: var(--gamana-ink);
   font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: 0;
@@ -159,12 +159,12 @@ a {
 .header__menu-item:hover,
 .header__active-menu-item:hover,
 .header__icon:hover {
-  color: var(--aurel-blue);
+  color: var(--gamana-blue);
 }
 
 .header__icon,
 .header__icon .svg-wrapper {
-  color: var(--aurel-ink);
+  color: var(--gamana-ink);
 }
 
 .header__icon .icon {
@@ -173,8 +173,8 @@ a {
 }
 
 .header__icon--cart .cart-count-bubble {
-  background: var(--aurel-ink);
-  color: var(--aurel-white);
+  background: var(--gamana-ink);
+  color: var(--gamana-white);
 }
 
 /* Clean, direct calls to action */
@@ -184,10 +184,10 @@ a {
 .shopify-payment-button__button--unbranded {
   min-height: 4.5rem;
   padding: 0.2rem 2.4rem;
-  border: 1px solid var(--aurel-blue);
+  border: 1px solid var(--gamana-blue);
   border-radius: 999px;
-  background: var(--aurel-blue);
-  color: var(--aurel-white);
+  background: var(--gamana-blue);
+  color: var(--gamana-white);
   font-size: 1.35rem;
   font-weight: 500;
   letter-spacing: 0;
@@ -210,30 +210,129 @@ a {
 .shopify-payment-button__button--unbranded:hover {
   border-color: #004f9f;
   background: #004f9f;
-  color: var(--aurel-white);
+  color: var(--gamana-white);
   transform: translateY(-1px);
 }
 
 .button--secondary {
-  border-color: var(--aurel-blue);
+  border-color: var(--gamana-blue);
   background: transparent;
-  color: var(--aurel-blue);
+  color: var(--gamana-blue);
 }
 
 .button--secondary:hover {
   background: rgba(0, 102, 204, 0.08);
-  color: var(--aurel-blue);
+  color: var(--gamana-blue);
 }
 
-/* Campaign hero: strong product image, direct copy, minimal overlays */
+/* Shopify homepage campaign banner and native product sections */
+#MainContent .banner {
+  position: relative;
+  min-height: clamp(58rem, 76svh, 82rem);
+  overflow: hidden;
+  background: var(--gamana-paper);
+  color: var(--gamana-ink);
+}
+
+#MainContent .banner__media {
+  z-index: 0;
+}
+
+#MainContent .banner__media > img,
+#MainContent .banner__media-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 66% center;
+}
+
+#MainContent .banner::after {
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(245, 245, 247, 0.98) 0%, rgba(245, 245, 247, 0.91) 30%, rgba(245, 245, 247, 0.34) 52%, rgba(245, 245, 247, 0) 78%);
+  opacity: 1 !important;
+}
+
+#MainContent .banner__content {
+  z-index: 2;
+  max-width: var(--atelier-content);
+  min-height: inherit;
+  padding: 6rem var(--atelier-gutter) 7rem;
+}
+
+#MainContent .banner__box,
+#MainContent .banner--desktop-transparent .banner__box {
+  width: min(100%, 62rem);
+  max-width: 62rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--gamana-ink);
+  text-align: left;
+  box-shadow: none;
+}
+
+#MainContent .banner__heading {
+  max-width: 9ch;
+  margin: 0;
+  color: inherit;
+  font-family: var(--atelier-display-font, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
+  font-size: clamp(5.8rem, 7.2vw, 10.4rem);
+  font-weight: 650;
+  letter-spacing: -0.075em;
+  line-height: 0.97;
+  text-wrap: balance;
+}
+
+#MainContent .banner__text {
+  max-width: 42rem;
+  margin-top: 2rem;
+  color: inherit;
+  font-size: clamp(1.55rem, 1.4vw, 1.85rem);
+  line-height: 1.55;
+}
+
+#MainContent .banner__buttons {
+  justify-content: flex-start;
+  margin-top: 2.4rem;
+}
+
+#MainContent .collection__title .title,
+#MainContent .collection-list-title,
+#MainContent .multicolumn .title,
+#MainContent .newsletter .title {
+  color: var(--gamana-ink);
+  font-family: var(--atelier-display-font, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
+  font-weight: 600;
+  letter-spacing: -0.06em;
+}
+
+#MainContent .collection-list-wrapper,
+#MainContent .multicolumn .page-width {
+  max-width: var(--atelier-content);
+}
+
+#MainContent .multicolumn-card__info h3 {
+  color: var(--gamana-ink);
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+#MainContent .multicolumn-card__info .rte {
+  color: var(--gamana-muted);
+  font-size: 1.35rem;
+  line-height: 1.6;
+}
+
+/* Campaign hero for the standalone design preview */
 .atelier-hero {
   position: relative;
   isolation: isolate;
   display: flex;
   min-height: clamp(58rem, 76svh, 82rem);
   overflow: hidden;
-  background: var(--aurel-paper);
-  color: var(--aurel-ink);
+  background: var(--gamana-paper);
+  color: var(--gamana-ink);
 }
 
 .atelier-hero__media,
@@ -261,7 +360,7 @@ a {
 }
 
 .atelier-hero--light {
-  color: var(--aurel-white);
+  color: var(--gamana-white);
 }
 
 .atelier-hero--light .atelier-hero__veil {
@@ -286,7 +385,7 @@ a {
 
 .atelier-eyebrow {
   margin: 0 0 1.8rem;
-  color: var(--aurel-muted);
+  color: var(--gamana-muted);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 1.15rem;
   font-weight: 600;
@@ -341,10 +440,10 @@ a {
   align-items: center;
   gap: 1.5rem;
   padding: 0.2rem 2.4rem;
-  border: 1px solid var(--aurel-blue);
+  border: 1px solid var(--gamana-blue);
   border-radius: 999px;
-  background: var(--aurel-blue);
-  color: var(--aurel-white);
+  background: var(--gamana-blue);
+  color: var(--gamana-white);
   font-size: 1.35rem;
   font-weight: 500;
   letter-spacing: 0;
@@ -356,7 +455,7 @@ a {
 .atelier-hero .atelier-button:hover {
   border-color: #004f9f;
   background: #004f9f;
-  color: var(--aurel-white);
+  color: var(--gamana-white);
   transform: translateY(-1px);
 }
 
@@ -376,7 +475,7 @@ a {
   align-items: center;
   gap: 0.55rem;
   border: 0;
-  color: var(--aurel-blue);
+  color: var(--gamana-blue);
   font-size: 1.35rem;
   font-weight: 400;
   letter-spacing: 0;
@@ -408,9 +507,9 @@ a {
 /* Values become a quiet service/editorial strip, not a heavy dark block */
 .atelier-values {
   padding: 3.4rem 0;
-  border-bottom: 1px solid var(--aurel-line);
-  background: var(--aurel-white);
-  color: var(--aurel-ink);
+  border-bottom: 1px solid var(--gamana-line);
+  background: var(--gamana-white);
+  color: var(--gamana-ink);
 }
 
 .atelier-values__inner {
@@ -422,13 +521,13 @@ a {
 
 .atelier-values .atelier-eyebrow {
   margin-bottom: 0.8rem;
-  color: var(--aurel-muted);
+  color: var(--gamana-muted);
 }
 
 .atelier-values__heading {
   max-width: 14ch;
   margin: 0;
-  color: var(--aurel-ink);
+  color: var(--gamana-ink);
   font-family: inherit;
   font-size: clamp(2rem, 2.5vw, 3rem);
   font-weight: 600;
@@ -446,20 +545,20 @@ a {
 .atelier-values__item {
   padding: 0 0 0 1.8rem;
   border-top: 0;
-  border-left: 1px solid var(--aurel-line);
+  border-left: 1px solid var(--gamana-line);
 }
 
 .atelier-values__number {
   display: block;
   margin: 0 0 1rem;
-  color: var(--aurel-blue);
+  color: var(--gamana-blue);
   font-size: 1.05rem;
   letter-spacing: 0.08em;
 }
 
 .atelier-values__item h3 {
   margin: 0 0 0.6rem;
-  color: var(--aurel-ink);
+  color: var(--gamana-ink);
   font-family: inherit;
   font-size: 1.35rem;
   font-weight: 600;
@@ -471,7 +570,7 @@ a {
 .atelier-values__item p {
   max-width: 25rem;
   margin: 0;
-  color: var(--aurel-muted);
+  color: var(--gamana-muted);
   font-size: 1.25rem;
   line-height: 1.5;
 }
@@ -497,7 +596,7 @@ a {
 .featured-collection .collection__title .title,
 .featured-collection .title {
   margin: 0;
-  color: var(--aurel-ink);
+  color: var(--gamana-ink);
   font-family: inherit;
   font-size: clamp(3.5rem, 5vw, 6.4rem);
   font-weight: 600;
@@ -508,7 +607,7 @@ a {
 .featured-collection .collection__description,
 .featured-collection .collection__description p {
   max-width: 54rem;
-  color: var(--aurel-muted);
+  color: var(--gamana-muted);
   font-size: 1.5rem;
   line-height: 1.55;
 }
@@ -523,18 +622,18 @@ a {
 }
 
 .card-wrapper {
-  color: var(--aurel-ink);
+  color: var(--gamana-ink);
 }
 
 .card__inner {
   overflow: hidden;
   border-radius: 1.8rem;
-  background: var(--aurel-paper);
+  background: var(--gamana-paper);
 }
 
 .card__media .media,
 .card__inner .card__media {
-  background: var(--aurel-paper);
+  background: var(--gamana-paper);
 }
 
 .card__media img {
@@ -551,7 +650,7 @@ a {
 
 .card__heading,
 .card__heading a {
-  color: var(--aurel-ink);
+  color: var(--gamana-ink);
   font-family: inherit;
   font-size: 1.55rem;
   font-weight: 600;
@@ -561,7 +660,7 @@ a {
 .price,
 .price-item,
 .caption-with-letter-spacing {
-  color: var(--aurel-muted);
+  color: var(--gamana-muted);
   font-size: 1.3rem;
   letter-spacing: 0;
 }
@@ -595,7 +694,7 @@ a {
 .atelier-categories__heading-row h2 {
   max-width: 14ch;
   margin: 0;
-  color: var(--aurel-ink);
+  color: var(--gamana-ink);
   font-family: inherit;
   font-size: clamp(3.5rem, 5vw, 6.4rem);
   font-weight: 600;
@@ -616,7 +715,7 @@ a {
 
 .atelier-category {
   display: block;
-  color: var(--aurel-ink);
+  color: var(--gamana-ink);
   text-decoration: none;
 }
 
@@ -625,7 +724,7 @@ a {
   overflow: hidden;
   aspect-ratio: 0.88;
   border-radius: 1.8rem;
-  background: var(--aurel-paper);
+  background: var(--gamana-paper);
 }
 
 .atelier-category__image {
@@ -651,13 +750,13 @@ a {
   border: 1px solid rgba(29, 29, 31, 0.08);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.94);
-  color: var(--aurel-blue);
+  color: var(--gamana-blue);
   font-size: 1.5rem;
   transition: transform 180ms ease, background-color 180ms ease;
 }
 
 .atelier-category:hover .atelier-category__arrow {
-  background: var(--aurel-white);
+  background: var(--gamana-white);
   transform: translate(2px, -2px);
 }
 
@@ -671,7 +770,7 @@ a {
 
 .atelier-category__meta h3 {
   margin: 0;
-  color: var(--aurel-ink);
+  color: var(--gamana-ink);
   font-family: inherit;
   font-size: clamp(1.6rem, 1.8vw, 2rem);
   font-weight: 600;
@@ -680,7 +779,7 @@ a {
 }
 
 .atelier-category__meta span {
-  color: var(--aurel-muted);
+  color: var(--gamana-muted);
   font-size: 1.2rem;
   text-align: right;
 }
@@ -692,7 +791,7 @@ a {
   min-height: 60rem;
   overflow: hidden;
   background: #1d1d1f;
-  color: var(--aurel-white);
+  color: var(--gamana-white);
 }
 
 .atelier-story--image-right .atelier-story__media {
@@ -722,7 +821,7 @@ a {
   display: flex;
   align-items: center;
   padding: clamp(4rem, 7vw, 10rem);
-  color: var(--aurel-white);
+  color: var(--gamana-white);
 }
 
 .atelier-story__content-inner {
@@ -737,7 +836,7 @@ a {
 .atelier-story__title {
   max-width: 9ch;
   margin: 0 0 2rem;
-  color: var(--aurel-white);
+  color: var(--gamana-white);
   font-family: inherit;
   font-size: clamp(4.4rem, 6vw, 7.8rem);
   font-weight: 600;
@@ -769,7 +868,7 @@ a {
 .newsletter,
 .email-signup-banner,
 .rich-text {
-  background: var(--aurel-paper);
+  background: var(--gamana-paper);
 }
 
 .newsletter .title,
@@ -798,8 +897,8 @@ a {
 
 .footer {
   margin-top: 0;
-  background: var(--aurel-paper);
-  color: var(--aurel-ink);
+  background: var(--gamana-paper);
+  color: var(--gamana-ink);
 }
 
 .footer .footer-block__heading,
@@ -807,7 +906,7 @@ a {
 .footer a,
 .footer .copyright__content,
 .footer .policies a {
-  color: var(--aurel-ink);
+  color: var(--gamana-ink);
 }
 
 .footer .footer-block__heading {
@@ -821,21 +920,21 @@ a {
 }
 
 .footer .footer__content-bottom {
-  border-top-color: var(--aurel-line);
+  border-top-color: var(--gamana-line);
 }
 
 .footer a:hover {
-  color: var(--aurel-blue);
+  color: var(--gamana-blue);
 }
 
 .cart-drawer .drawer__inner,
 .cart-notification {
-  background: var(--aurel-white);
+  background: var(--gamana-white);
 }
 
 .cart-drawer .drawer__heading,
 .cart__empty-text {
-  color: var(--aurel-ink);
+  color: var(--gamana-ink);
   font-family: inherit;
   font-size: 3.2rem;
   font-weight: 600;
@@ -847,7 +946,7 @@ a {
 }
 
 /* A real 404 remains useful without becoming a dead end. */
-.aurel-404 {
+.gamana-404 {
   display: flex;
   min-height: min(70vh, 68rem);
   flex-direction: column;
@@ -858,11 +957,11 @@ a {
   text-align: center;
 }
 
-.aurel-404 .atelier-eyebrow {
+.gamana-404 .atelier-eyebrow {
   margin-bottom: 1.5rem;
 }
 
-.aurel-404 .title {
+.gamana-404 .title {
   max-width: 14ch;
   margin: 0;
   font-family: inherit;
@@ -872,15 +971,15 @@ a {
   line-height: 0.98;
 }
 
-.aurel-404__message {
+.gamana-404__message {
   max-width: 54rem;
   margin: 1.8rem 0 0;
-  color: var(--aurel-muted);
+  color: var(--gamana-muted);
   font-size: 1.6rem;
   line-height: 1.6;
 }
 
-.aurel-404__actions {
+.gamana-404__actions {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -889,38 +988,46 @@ a {
   margin-top: 2.8rem;
 }
 
-.aurel-404__search {
+.gamana-404__search {
   display: flex;
   width: min(100%, 50rem);
   gap: 1rem;
   margin-top: 4.5rem;
 }
 
-.aurel-404__search input {
+.gamana-404__search input {
   flex: 1;
   min-width: 0;
   min-height: 4.5rem;
   padding: 0 1.5rem;
-  border: 1px solid var(--aurel-line);
+  border: 1px solid var(--gamana-line);
   border-radius: 999px;
-  background: var(--aurel-paper);
-  color: var(--aurel-ink);
+  background: var(--gamana-paper);
+  color: var(--gamana-ink);
 }
 
 @media screen and (max-width: 749px) {
-  .aurel-404 {
+  .gamana-404 {
     min-height: 64vh;
     padding-top: 6rem;
     padding-bottom: 7rem;
   }
 
-  .aurel-404__search {
+  .gamana-404__search {
     gap: 0.8rem;
   }
 }
 
 /* Responsive refinements */
 @media screen and (max-width: 989px) {
+  #MainContent .banner {
+    min-height: clamp(54rem, 72svh, 72rem);
+  }
+
+  #MainContent .banner__content {
+    padding: 5rem 4rem;
+  }
+
   .header {
     min-height: 5.2rem;
     padding-top: 0.3rem;
@@ -952,6 +1059,40 @@ a {
 @media screen and (max-width: 749px) {
   html {
     scroll-padding-top: 7rem;
+  }
+
+  #MainContent .banner {
+    min-height: clamp(56rem, 78svh, 70rem);
+  }
+
+  #MainContent .banner__media > img,
+  #MainContent .banner__media-image {
+    object-position: 70% center;
+  }
+
+  #MainContent .banner::after {
+    background: linear-gradient(0deg, rgba(245, 245, 247, 0.98) 0%, rgba(245, 245, 247, 0.93) 31%, rgba(245, 245, 247, 0.44) 58%, rgba(245, 245, 247, 0.04) 100%);
+  }
+
+  #MainContent .banner__content {
+    min-height: inherit;
+    padding: 2.5rem 2.2rem 6rem;
+  }
+
+  #MainContent .banner__box {
+    width: 100%;
+    max-width: none;
+    text-align: left;
+  }
+
+  #MainContent .banner__heading {
+    max-width: 8ch;
+    font-size: clamp(5.6rem, 13vw, 8rem);
+  }
+
+  #MainContent .banner__text {
+    margin-top: 1.4rem;
+    font-size: 1.45rem;
   }
 
   .announcement-bar__message,
@@ -1047,7 +1188,7 @@ a {
     grid-template-columns: 2.5rem 1fr;
     column-gap: 1rem;
     padding: 1.3rem 0 0;
-    border-top: 1px solid var(--aurel-line);
+    border-top: 1px solid var(--gamana-line);
     border-left: 0;
   }
 
@@ -1182,6 +1323,6 @@ a {
 .newsletter .title,
 .email-signup-banner .banner__heading,
 .rich-text .title,
-.aurel-404 .title {
+.gamana-404 .title {
   font-family: var(--atelier-display-font, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
 }

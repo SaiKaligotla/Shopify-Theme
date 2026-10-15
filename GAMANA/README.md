@@ -1,6 +1,6 @@
-# AUREL — Modern Shopify storefront
+# GAMANA — Modern Shopify storefront
 
-AUREL is a designer-led Online Store 2.0 theme for a premium fashion and beauty store. Brand copy, sample product photography, names, and prices are placeholders; replace them with the store's approved identity and catalog before launch.
+GAMANA is a designer-led Online Store 2.0 theme for a premium fashion and beauty store. Brand copy, sample product photography, names, and prices are placeholders; replace them with the store's approved identity and catalog before launch.
 
 ## Preview and package
 
@@ -11,6 +11,6 @@ AUREL is a designer-led Online Store 2.0 theme for a premium fashion and beauty 
 
 ## Design direction
 
-The store uses a restrained product-first layout: compact navigation, a campaign-scale hero, generous breathing room, clear product and collection groupings, and direct calls to action. It takes broad visual cues from Apple's product storytelling and retail clarity, while keeping AUREL's own brand, imagery, and fashion/beauty catalog. Shopify Dawn 16.0.0 provides the underlying product, collection, cart, search, accessibility, and theme-editor behavior.
+The store uses a restrained product-first layout: compact navigation, a campaign-scale hero, generous breathing room, clear product and collection groupings, and direct calls to action. It takes broad visual cues from Apple's product storytelling and retail clarity, while keeping GAMANA's own brand, imagery, and fashion/beauty catalog. Shopify Dawn 16.0.0 provides the underlying product, collection, cart, search, accessibility, and theme-editor behavior.
 
 See [`docs/START-HERE.md`](docs/START-HERE.md) for the plain-English handoff and [`docs/DESIGN-DECISIONS.md`](docs/DESIGN-DECISIONS.md) for the design record. The included Dawn license is in `LICENSE.md`.
