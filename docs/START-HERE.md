@@ -8,12 +8,13 @@ This is the **GAMANA** storefront theme. The current copy and product photograph
 
 ## Current state
 
-- The Shopify theme root is `GAMANA/`. The home page is `templates/index.json` and is built from Shopify/Dawn sections: a campaign banner, live featured collection, collection picker, editorial/value columns, and newsletter.
-- The home page reads real Shopify catalog data. The collection list and image banner can be customized from **Online Store → Themes → Customize**.
+- **The Shopify theme root is the repository root**, one level above this guide. Shopify's `assets/`, `config/`, `layout/`, `locales/`, `sections/`, `snippets/`, and `templates/` directories are directly at that level; there is no enclosing `GAMANA/` folder.
+- `templates/index.json` is the home page and uses Shopify/Dawn sections: a campaign banner, live featured collection, collection picker, editorial/value columns, and newsletter.
+- The home page reads Shopify catalog data. The collection list and image banner can be customized from **Online Store → Themes → Customize**.
 - Dawn provides the product, collection, search, cart, checkout handoff, accessibility, and theme-editor behavior. `templates/404.json` is only the not-found fallback; it is not the home page.
 - The local preview in `preview/` is a visual prototype with sample products and prices. Its cart and email form are demonstrations; they do not create orders or collect email addresses. The repository-root `index.html` opens this preview on a static host.
-- The repository-root `Shopify-Theme.zip` is the upload-ready theme archive. Its root contains Shopify's standard folders, not a parent `GAMANA/` directory; it excludes the project guide and local preview.
-- Uploading a theme creates a draft in Shopify. It does not publish the theme automatically; use the Shopify theme editor to review and publish only when approved.
+- The repository-root `Shopify-Theme.zip` is the upload-ready theme archive. Its root contains Shopify's standard theme folders directly, with no parent `GAMANA/` folder; it excludes project notes and the local preview.
+- Uploading a theme creates a draft in Shopify and does not publish it automatically. Use the Shopify theme editor to preview and publish only when approved.
 
 ## What the Shopify terms mean
 
@@ -30,18 +31,21 @@ This is the **GAMANA** storefront theme. The current copy and product photograph
 
 ## How the theme is organized
 
+All paths below are relative to the repository root:
+
 - `layout/theme.liquid` is the shared frame around the store.
 - `templates/` contains the page recipes for home, product, collection, cart, search, and other routes.
-- `sections/` contains the reusable page areas available in Shopify's theme editor.
+- `sections/` contains reusable page areas available in Shopify's theme editor.
 - `snippets/` contains small pieces reused in more than one place, such as a product card.
 - `assets/` holds styles, scripts, icons, and replaceable sample images.
 - `config/` defines the options the store owner can change in the theme editor.
 - `locales/` holds translated wording.
+- `preview/` and `docs/` contain local review materials and are excluded from Shopify uploads.
 
 ## Reviewing the design
 
-1. Open the live preview for the storefront and check it at desktop and phone widths.
-2. Try the menu, search, product links, and add-to-cart behavior in Shopify's unpublished theme.
+1. Open the local preview and check it at desktop and phone widths.
+2. In Shopify, preview the unpublished theme and try the menu, search, product links, and add-to-cart behavior.
 3. Tell me what to change—such as the image, copy, colors, spacing, product group, or section order.
 
 ## What is still waiting for the store owner

@@ -1,6 +1,6 @@
 # GAMANA theme — design decisions
 
-This is the working record of the storefront direction and what still needs real store input.
+This is the working record of the storefront direction and what still needs real store input. Shopify theme source lives at the repository root; the local prototype is in the repository-root `preview/` directory.
 
 ## Brief
 

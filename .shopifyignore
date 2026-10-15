@@ -1,0 +1,11 @@
+# Project-only documentation and preview; package only the Shopify theme root.
+docs/
+preview/
+google_drive/
+README.md
+index.html
+LICENSE.md
+.gitignore
+.shopifyignore
+.theme-check.yml
+*.zip
