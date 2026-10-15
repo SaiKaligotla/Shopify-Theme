@@ -1,9 +1,9 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "AUREL — Modern Luxe",
-    "theme_version": "1.0.0",
-    "theme_author": "AUREL Studio",
+    "theme_name": "GAMANA — The Everyday Edit",
+    "theme_version": "2.0.0",
+    "theme_author": "GAMANA Studio",
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
     "theme_support_url": "https://support.shopify.com/"
   },
@@ -147,7 +147,7 @@
     ]
   },
   {
-    "name": "AUREL typography",
+    "name": "GAMANA typography",
     "settings": [
       {
         "type": "select",

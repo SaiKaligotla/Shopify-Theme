@@ -83,8 +83,17 @@
       }}
     </div>
   {%- elsif section.settings.image_2 == blank -%}
-    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    <div class="banner__media media placeholder{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      <img
+        class="banner__media-image"
+        src="{{ 'placeholder-editorial-hero.jpg' | asset_url }}"
+        alt=""
+        width="1568"
+        height="980"
+        loading="{% if section.index == 1 %}eager{% else %}lazy{% endif %}"
+        fetchpriority="{{ fetch_priority }}"
+        decoding="async"
+      >
     </div>
   {%- endif -%}
   {%- if section.settings.image_2 != blank -%}
@@ -120,12 +129,16 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2
+            {%- assign banner_heading_tag = 'h2' -%}
+            {%- if request.page_type == 'index' -%}
+              {%- assign banner_heading_tag = 'h1' -%}
+            {%- endif -%}
+            <{{ banner_heading_tag }}
               class="banner__heading inline-richtext {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
             >
               {{ block.settings.heading }}
-            </h2>
+            </{{ banner_heading_tag }}>
           {%- when 'text' -%}
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>

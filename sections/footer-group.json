@@ -7,9 +7,9 @@
       "blocks": {},
       "block_order": [],
       "settings": {
-        "color_scheme": "scheme-3",
-        "newsletter_enable": true,
-        "newsletter_heading": "A more considered inbox.",
+        "color_scheme": "scheme-2",
+        "newsletter_enable": false,
+        "newsletter_heading": "Good things, occasionally.",
         "enable_follow_on_shop": false,
         "show_social": true,
         "enable_country_selector": false,

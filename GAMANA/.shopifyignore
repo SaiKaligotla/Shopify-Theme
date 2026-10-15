@@ -1,9 +1,0 @@
-# Project notes and local design preview are not storefront theme files.
-README.md
-LICENSE.md
-.theme-check.yml
-.prettierrc.json
-.gitignore
-.shopifyignore
-docs/
-preview/

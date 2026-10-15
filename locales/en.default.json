@@ -263,7 +263,7 @@
     },
     "404": {
       "title": "Page not found",
-      "subtext": "404"
+      "subtext": "The page you’re looking for isn’t here. Search the store or return to the home page."
     }
   },
   "sections": {

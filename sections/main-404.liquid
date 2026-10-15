@@ -1,0 +1,36 @@
+<section class="gamana-404 page-width" aria-labelledby="GamanaNotFoundTitle-{{ section.id }}">
+  <p class="atelier-eyebrow">404 / THE PAGE ISN'T HERE</p>
+  <h1 class="title" id="GamanaNotFoundTitle-{{ section.id }}">{{ 'templates.404.title' | t }}</h1>
+  <p class="gamana-404__message">{{ 'templates.404.subtext' | t }}</p>
+
+  <div class="gamana-404__actions">
+    <a href="{{ routes.root_url }}" class="button">Back to GAMANA</a>
+    <a href="{{ routes.all_products_collection_url }}" class="atelier-text-link">
+      Shop the collection <span aria-hidden="true">→</span>
+    </a>
+  </div>
+
+  <form action="{{ routes.search_url }}" method="get" role="search" class="gamana-404__search">
+    <label class="visually-hidden" for="GamanaNotFoundSearch-{{ section.id }}">Search the store</label>
+    <input
+      id="GamanaNotFoundSearch-{{ section.id }}"
+      type="search"
+      name="q"
+      placeholder="Search products and collections"
+      aria-label="Search products and collections"
+    >
+    <button type="submit" class="button button--secondary">Search</button>
+  </form>
+</section>
+
+{% schema %}
+{
+  "name": "404 page",
+  "tag": "section",
+  "class": "section-main-404",
+  "settings": [],
+  "presets": [
+    { "name": "404 page" }
+  ]
+}
+{% endschema %}
