@@ -1,0 +1,54 @@
+<section class="atelier-values" aria-labelledby="AtelierValuesHeading-{{ section.id }}">
+  <div class="atelier-values__inner page-width">
+    <div class="atelier-values__intro">
+      {% if section.settings.eyebrow != blank %}
+        <p class="atelier-eyebrow">{{ section.settings.eyebrow | escape }}</p>
+      {% endif %}
+      <h2 class="atelier-values__heading" id="AtelierValuesHeading-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+    </div>
+    <div class="atelier-values__list">
+      {% for block in section.blocks %}
+        <article class="atelier-values__item" {{ block.shopify_attributes }}>
+          <span class="atelier-values__number" aria-hidden="true">0{{ forloop.index }}</span>
+          <h3>{{ block.settings.title | escape }}</h3>
+          {% if block.settings.body != blank %}
+            <p>{{ block.settings.body | escape }}</p>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Atelier values",
+  "tag": "section",
+  "class": "atelier-values-section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Small heading", "default": "THE AUREL APPROACH" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "A little more considered." }
+  ],
+  "blocks": [
+    {
+      "type": "principle",
+      "name": "Principle",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title", "default": "Thoughtful by design" },
+        { "type": "textarea", "id": "body", "label": "Description", "default": "A clear point of view, without the noise." }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Atelier values",
+      "blocks": [
+        { "type": "principle", "settings": { "title": "Thoughtful by design", "body": "A clear point of view, without the noise." } },
+        { "type": "principle", "settings": { "title": "Chosen with care", "body": "Details that feel as good as they look." } },
+        { "type": "principle", "settings": { "title": "Made for everyday", "body": "Considered pieces for real life." } }
+      ]
+    }
+  ]
+}
+{% endschema %}
